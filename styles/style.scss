@@ -1,0 +1,23 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#gallery {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, (minmax(25rem, 1fr)));
+  grid-gap: 1px;
+
+  .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+}
